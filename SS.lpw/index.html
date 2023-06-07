@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STELLARIUM</title>
+    <link rel="icon" href="imgs/icone.png"></link>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <h1 id="sistemasolar"> SISTEMA SOLAR </h1>
+
+    <H2 id="stellarium">STELLARIUM</H2>
+
+    <P class="tdemais">
+        Tudo e mais um pouco sobre o nosso sistema solar
+    </P>
+
+    <p id="planetas">
+        <a id="solimg" href="sol.html"><img src="imgs/solzao.png"></a>
+        <a id="merimg" href="mercurio.html"><img src="imgs/mercuriozao.png"></a>
+        <a id="venimg" href="venus.html"><img src="imgs/venuszao.png"></a>
+        <a id="terraimg" href="terra.html"><img src="imgs/terrazao.png"></a>
+        <a id="martimg" href="marte.html"><img src="imgs/martezao.png"></a>
+        <a id="jupimg" href="jupiter.html"><img src="imgs/jupiterzao.png"></a>
+        <a id="satimg" href="saturno.html"><img src="imgs/saturnao.png"></a>
+        <a id="uranimg" href="urano.html"><img src="imgs/uranao.png"></a>
+        <a id="netimg" href="netuno.html"><img src="imgs/netunao.png"></a>
+    </p>
+
+
+    <p id="tabela">Comparações: <a href="tabela.html"><img src=""></a></p>
+    <p id="simples">Simples e FÁCIL</p>
+    <ul id="partedebaixo">
+        <li>
+            <i><b>Clique no astro para obter mais informações sobre ele</b></i>
+         </li>
+    </ul>
+
+    <script src="meteoro.js"></script>
+    <div id="lateral" class="backdrop">
+        <video src="imgs/SnapSave.io-The UNIVERSE in 4K 60fps-(1080p60).mp4" autoplay muted>
+        </video>
+      </div>
+  
+      <script>
+        
+        let tempo = 1100;  
+        setTimeout(() => {
+          
+          document.querySelector('.backdrop').classList.add('desaparecido');
+          
+          document.querySelector('#conteudo-principal').classList.remove('desaparecido');
+        }, tempo);
+        </script>
+    
+
+    
+
+
+</body>
+</html>

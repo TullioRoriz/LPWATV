@@ -1,0 +1,92 @@
+
+body{
+    background-image: url("imgs/papelparede.jpg");
+    color: white;
+    background-size: cover;
+
+}
+@font-face{
+    font-family: "123";
+
+    /*Caso a fonte esteja na mesma pasta*/
+    src: url("fonte/StarJediRounded-jW3R.ttf");
+}
+#sistemasolar{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+#stellarium{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+    text-align: center;
+}
+#partedebaixo{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(255, 0, 0);
+    justify-content: center;
+    display: flex;
+
+}
+#simples {
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    color: aquamarine;
+    float: inline-end;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+#tabela{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(255, 182, 127);
+    float: inline-end;
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
+.tdemais{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(9, 204, 139);
+    float: inline-end;
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+}
+a img {
+    width: 50px;
+    padding-top: 5%;
+    padding-left: 3%;
+}
+a img:hover {
+    
+    position: relative;
+    scale: 1.5;
+    transition: 0.5s;
+}
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 1s linear;
+  opacity: 1;
+  visibility: visible;
+}
+
+.desaparecido {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.backdrop video {
+  width: 100%;
+}
